@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Firebase Train Schedule</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="jumbotron container text-center trn-header">
+            <h1>Anytime is Train Time</h1>
+            <h3>Choo Choo. Chee Chee.</h3>
+        </header>
+        <div class="container space container-fluid">
+            <div class="card">
+                <h5 class="card-header blue-background">Current Train Schedule</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency <small>(min)</small></th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card">
+                <h5 class="card-header blue-background">Add Train</h5>
+                <div class="card-body">
+                    <form id="nameForm">
+                        <div class="row form-group">
+                            <label class="container-fluid">Train Name<input type="text" name="trainName" class="col-lg-12 form-control full"></label>
+                        </div>
+
+                        <div class="row form-group">
+                            <label class="container-fluid">Destination<input type="text" name="destinationName" class="col-lg-12 form-control full"></label>
+                        </div>
+                        <div class="row form-group">
+                            <label class="container-fluid">First Train Time <small>(HH:mm - military time)</small><input type="text" name="firstTrainTimeName" class="col-lg-12 form-control"></label>
+                        </div>
+                        <div class="row form-group">
+                            <label class="container-fluid">Frequency <small>(min)</small><input type="text" name="frequencyName" class="col-lg-12 form-control"></label>
+                        </div>
+                        <div class="row form-group container-fluid">
+                            <button type="submit" class="btn btn-primary" id="formSubmit">Submit</button>   
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="firebase.js"></script>    
+    </body>
+</html>

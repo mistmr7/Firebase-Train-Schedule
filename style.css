@@ -1,0 +1,17 @@
+.jumbotron {
+    background-color:#775430; 
+    color: white;
+    margin-bottom: 20px
+}
+
+h1 {
+    font-size: 60px
+}
+
+.blue-background {
+    background-color: blue;
+    color: white;
+}
+.space {
+    margin-bottom: 10px;
+}
